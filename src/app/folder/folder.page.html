@@ -1,0 +1,49 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>{{ folder }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true"  style="background-color: blueviolet !important;">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">{{ folder }}</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container" >
+
+    <div id="graciela-cont" *ngIf="folder==='Graciela'">
+      <p>Graciela</p>
+      <div *ngFor="let medicine2 of medicineGraciela;let i = index;">
+        <ion-card>
+          <p>{{medicineGraciela[i].Name}}</p>
+          <br>
+          <p>{{medicineGraciela[i].Data}}</p>
+        </ion-card>  
+        </div>
+    </div>  
+
+
+    <div id="juan-cont" *ngIf="folder==='Juan'">
+      <p>Juan</p>
+      <div *ngFor="let medicine of medicineJuan; let i= index;">
+      <ion-card>
+        <p>{{medicineJuan[i].Name}}</p>
+        <br>
+        <p>{{medicineJuan[i].Data}}</p>
+      </ion-card>  
+    </div>
+    </div>  
+    
+    
+    
+  
+      
+      
+    
+  </div>
+</ion-content>
