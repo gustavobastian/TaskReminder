@@ -48,4 +48,11 @@ export class FolderPage implements OnInit {
     }
   }
 
+  async onClick1(){
+    console.log("click 1");
+  }
+  async onClick2(){
+    console.log("click 2");
+  }
+
 }

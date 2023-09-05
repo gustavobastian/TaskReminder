@@ -15,6 +15,15 @@
   </ion-header>
 
   <div id="container" >
+    <div id="principal-cont" *ngIf="folder==='main'">
+        <ion-button id="button1" (click)="onClick1()" href="/folder/Graciela" 	 color="success" fill="solid" shape="round">
+          Graciela
+        </ion-button>
+        <ion-button id="button2" (click)="onClick2()" href="/folder/Juan"  color="success" fill="solid" shape="round">
+          Juan
+        </ion-button>
+        
+    </div>
 
     <div id="graciela-cont" *ngIf="folder==='Graciela'">
       <p>Graciela</p>

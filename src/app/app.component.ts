@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Medicine } from './model/medicine';
+
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',
@@ -7,6 +7,7 @@ import { Medicine } from './model/medicine';
 })
 export class AppComponent {
   public appPages = [
+    { title: 'Principal', url: '/folder/main', icon: 'book' },
     { title: 'Graciela', url: '/folder/Graciela', icon: 'woman' },
     { title: 'Juan', url: '/folder/Juan', icon: 'man' },   
   ];
