@@ -16,37 +16,46 @@
 
   <div id="container" >
     <div id="principal-cont" *ngIf="folder==='main'">
-        <ion-button id="button1" (click)="onClick1()" href="/folder/Graciela" 	 color="success" fill="solid" shape="round">
-          Graciela
+      
+      <div>
+        <ion-button id="button1" (click)="onClick1()" href="/folder/Graciela" 	 color="success"  shape="round" >
+          <img src="../../assets/Gra.png" alt="Gra picture" width="100%">
         </ion-button>
-        <ion-button id="button2" (click)="onClick2()" href="/folder/Juan"  color="success" fill="solid" shape="round">
-          Juan
+        <ion-button id="button2" (click)="onClick2()" href="/folder/Juan"  color="success"  shape="round" >
+          <img src="../../assets/Juan.png" alt="Juan picture" width="100%">
         </ion-button>
+      </div>
         
     </div>
 
     <div id="graciela-cont" *ngIf="folder==='Graciela'">
       <p>Graciela</p>
-      <div *ngFor="let medicine2 of medicineGraciela;let i = index;">
-        <ion-card>
-          <p>{{medicineGraciela[i].Name}}</p>
-          <br>
-          <p>{{medicineGraciela[i].Data}}</p>
-        </ion-card>  
+      <img src="../../assets/Gra.png" alt="Gra picture" width="100px">
+      <div class="cardsFolder">
+        <div  *ngFor="let medicine2 of medicineGraciela;let i = index;">
+          <ion-card class="cardType">
+            <p class="myP">{{medicineGraciela[i].Name}}</p>
+            <br>
+            <p class="myP">{{medicineGraciela[i].Data}}</p>
+          </ion-card>  
         </div>
+      </div>
     </div>  
 
 
     <div id="juan-cont" *ngIf="folder==='Juan'">
       <p>Juan</p>
-      <div *ngFor="let medicine of medicineJuan; let i= index;">
-      <ion-card>
-        <p>{{medicineJuan[i].Name}}</p>
-        <br>
-        <p>{{medicineJuan[i].Data}}</p>
-      </ion-card>  
+      <img src="../../assets/Juan.png" alt="Juan picture" width="100px">
+      <div class="cardsFolder">
+        <div *ngFor="let medicine of medicineJuan; let i= index;">
+            <ion-card class="cardType">
+              <p>{{medicineJuan[i].Name}}</p>
+              <br>
+              <p>{{medicineJuan[i].Data}}</p>
+            </ion-card>  
+        </div>
+      </div>  
     </div>
-    </div>  
     
     
     

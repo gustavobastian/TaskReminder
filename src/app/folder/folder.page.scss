@@ -26,3 +26,26 @@ ion-menu-button {
 #container a {
   text-decoration: none;
 }
+
+#button2,#button1 {
+  width: 200px;
+  height: 200px;
+  border-radius: 35px;
+  --vertical-align: middle;
+  --padding-start: -10px;
+  --padding-end: -10px;
+  --margin:10px;
+}
+.cardsFolder{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;  
+}
+.cardType{
+  background-color: green;  
+  width: 150px;
+  height: auto;
+}
+.myP{
+  font: size 60px;;
+}
