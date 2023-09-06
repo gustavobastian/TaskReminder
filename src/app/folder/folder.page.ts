@@ -21,7 +21,7 @@ export class FolderPage implements OnInit {
 
   constructor(private activatedRoute: ActivatedRoute) {
     this.localMedicine.Data="12:30";
-    this.localMedicine.Name="UltraNural";
+    this.localMedicine.Name="Gabapentin 300mg";
     this.result =  this.medicineGraciela.push(this.localMedicine);
     console.log("Gra:"+JSON.stringify(this.medicineGraciela));
     
@@ -34,7 +34,7 @@ export class FolderPage implements OnInit {
     
     let localMedicine3:Medicine=new Medicine();
     localMedicine3.Data="12:30";
-    localMedicine3.Name="MetalFormina";
+    localMedicine3.Name="MetFormina 1g";
     this.result =  this.medicineGraciela.push(localMedicine3);    
 
     let localMedicine4:Medicine=new Medicine();    
@@ -51,20 +51,20 @@ export class FolderPage implements OnInit {
     console.log("Gra:"+JSON.stringify(this.medicineGraciela));
     let localMedicine6:Medicine=new Medicine();        
     localMedicine6.Data="14:17";
-    localMedicine6.Name="Endial 4";
+    localMedicine6.Name="Glimepirida";
     this.result2 =  this.medicineGraciela.push(localMedicine6);
     
     console.log("Gra:"+JSON.stringify(this.medicineGraciela));
 
     let localMedicine7:Medicine=new Medicine();        
     localMedicine7.Data="12:30";
-    localMedicine7.Name="Rovartal 10";
+    localMedicine7.Name="Rosuvastatina";
     this.result =  this.medicineGraciela.push(localMedicine7);    
 
     console.log("Gra:"+JSON.stringify(this.medicineGraciela));
     let localMedicine8:Medicine=new Medicine();        
     localMedicine8.Data="14:17";
-    localMedicine8.Name="Glimepirida";
+    localMedicine8.Name="AMLODIPINA 10mg";
     this.result2 =  this.medicineGraciela.push(localMedicine8);
     console.log("Gra:"+JSON.stringify(this.medicineGraciela));
     
