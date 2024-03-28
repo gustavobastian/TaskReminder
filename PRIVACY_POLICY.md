@@ -1,4 +1,4 @@
-# Clima App: Privacy policy
+# Abuelito App: Privacy policy
 
 Welcome to the Abuelito app for Android!
 
@@ -8,7 +8,7 @@ I hereby state, to the best of my knowledge and belief, that I have not programm
 
 ## Explanation of permissions requested in the app
 
-The list of permissions required by the app can be found in the `AndroidManifest.xml` file:
+As the app not uses anything from the phone no permissions are needed. 
 
 If you find any security vulnerability that has been inadvertently caused by me, or have any question regarding how the app protectes your privacy, please send me an email or post a discussion on GitHub, and I will surely try to fix it/help you.
 
