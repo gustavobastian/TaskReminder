@@ -15,8 +15,8 @@
   </ion-header>
 
   <div id="container" >
-    <div id="principal-cont" *ngIf="folder==='main'">
-      
+    <div id="principal-cont" *ngIf="folder==='Principal'">
+
       <div>
         <ion-button id="button1" (click)="onClick1()" href="/folder/Graciela" 	 color="success"  shape="round" >
           <img src="../../assets/Gra.png" alt="Gra picture" width="100%">
@@ -25,7 +25,7 @@
           <img src="../../assets/Juan.png" alt="Juan picture" width="100%">
         </ion-button>
       </div>
-        
+
     </div>
 
     <div id="graciela-cont" *ngIf="folder==='Graciela'">
@@ -37,10 +37,10 @@
             <p class="myP">{{medicineGraciela[i].Name}}</p>
             <br>
             <p class="myP">{{medicineGraciela[i].Data}}</p>
-          </ion-card>  
+          </ion-card>
         </div>
       </div>
-    </div>  
+    </div>
 
 
     <div id="juan-cont" *ngIf="folder==='Juan'">
@@ -52,16 +52,16 @@
               <p>{{medicineJuan[i].Name}}</p>
               <br>
               <p>{{medicineJuan[i].Data}}</p>
-            </ion-card>  
+            </ion-card>
         </div>
-      </div>  
+      </div>
     </div>
-    
-    
-    
-  
-      
-      
-    
+
+
+
+
+
+
+
   </div>
 </ion-content>
