@@ -3,12 +3,16 @@ ion-menu-button {
 }
 
 #container {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
   text-align: center;
   position: absolute;
-  left: 0;
+  left: 0%;
   right: 0;
   top: 50%;
   transform: translateY(-50%);
+
 }
 
 #container strong {
@@ -19,7 +23,7 @@ ion-menu-button {
 #container p {
   font-size: 16px;
   line-height: 22px;
-  color: #8c8c8c;
+  color: #ccc6c6;
   margin: 0;
 }
 
@@ -39,10 +43,11 @@ ion-menu-button {
 .cardsFolder{
   display:flex;
   flex-direction: row;
-  flex-wrap: wrap;  
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 .cardType{
-  background-color: rgb(53, 53, 163);  
+  background-color: rgb(53, 53, 163);
   width: 150px;
   height: auto;
 }
