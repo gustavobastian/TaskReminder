@@ -12,7 +12,8 @@ $RECYCLE.BIN/
 *.log
 log.txt
 
-
+/.nx
+/.vscode
 /.sourcemaps
 /.versions
 /coverage
@@ -68,3 +69,4 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+.nx
