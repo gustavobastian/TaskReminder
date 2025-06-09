@@ -7,7 +7,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true"  style="background-color: blueviolet !important;">
+<ion-content [fullscreen]="true" class="bkgC">
   <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">{{ folder }}</ion-title>
@@ -18,21 +18,21 @@
     <div id="principal-cont" *ngIf="folder==='Principal'">
 
       <div>
-        <ion-button id="button1" (click)="onClick1()" href="/folder/Graciela" 	 color="success"  shape="round" >
-          <img src="../../assets/Gra.png" alt="Gra picture" width="100%">
+        <ion-button id="button1" href="/folder/Graciela" 	 color="success"  shape="round" >
+          <img src="../../assets/Gra.png" alt="Gra picture" class="imgsF">
         </ion-button>
-        <ion-button id="button2" (click)="onClick2()" href="/folder/Juan"  color="success"  shape="round" >
-          <img src="../../assets/Juan.png" alt="Juan picture" width="100%">
+        <ion-button id="button2" href="/folder/Juan"  color="success"  shape="round" >
+          <img src="../../assets/Juan.png" alt="Juan picture" class="imgsF">
         </ion-button>
       </div>
 
     </div>
 
-    <div id="graciela-cont" *ngIf="folder==='Graciela'">
+    <div id="graciela-cont" *ngIf="folder==='Graciela'" class="personContent">
       <p>Graciela</p>
-      <img src="../../assets/Gra.png" alt="Gra picture" width="100px">
+      <img src="../../assets/Gra.png" alt="Gra picture" class="imgs">
       <div class="cardsFolder">
-        <div  *ngFor="let medicine2 of medicineGraciela;let i = index;">
+        <div *ngFor="let medicine2 of medicineGraciela;let i = index;">
           <ion-card class="cardType">
             <p class="myP">{{medicineGraciela[i].Name}}</p>
             <br>
@@ -43,9 +43,9 @@
     </div>
 
 
-    <div id="juan-cont" *ngIf="folder==='Juan'">
+    <div id="juan-cont" *ngIf="folder==='Juan'"  class="personContent">
       <p>Juan</p>
-      <img src="../../assets/Juan.png" alt="Juan picture" width="100px">
+      <img src="../../assets/Juan.png" alt="Juan picture" class="imgs">
       <div class="cardsFolder">
         <div *ngFor="let medicine of medicineJuan; let i= index;">
             <ion-card class="cardType">
@@ -56,12 +56,6 @@
         </div>
       </div>
     </div>
-
-
-
-
-
-
 
   </div>
 </ion-content>

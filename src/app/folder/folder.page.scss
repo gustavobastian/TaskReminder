@@ -45,6 +45,7 @@ ion-menu-button {
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
+  overflow: auto;
 }
 .cardType{
   background-color: rgb(53, 53, 163);
@@ -53,4 +54,26 @@ ion-menu-button {
 }
 .myP{
   font-size:medium;
+}
+.imgs{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width:100px;
+}
+.imgsF {
+  width: 100%;
+}
+
+.bkgC{
+  background-color: blueviolet !important;
+}
+.personContent{
+  position:absolute;
+  margin-top: -210px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
 }
